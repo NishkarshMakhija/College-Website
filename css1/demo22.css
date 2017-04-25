@@ -1,0 +1,228 @@
+.mainBox
+{
+	width:auto;
+	height:auto;
+	position:absolute;
+	background:#02FFFB;
+	z-index:27;
+	
+	cursor:pointer;
+	
+	left:50%;
+	top:10%;
+	
+	border: 2px solid #02FFFB;
+	box-shadow: 0 0 150px #02FFFB;
+	
+	perspective:1000px;
+	
+	margin-bottom:50px;
+	
+	-moz-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
+	transform:translateX(-50%);
+	
+	//transform:translate(-50%,-50%);
+	//-moz-transform:translate(-50%,-50%);
+	//-o-transform:translate(-50%,-50%);
+	//-webkit-transform:translate(-50%,-50%);
+}
+
+.row
+{
+	width:auto;
+	height:auto;
+}
+
+.cube
+{
+	position:relative;
+	width:180px;
+	height:180px;
+	background:#000000;
+	//left:10px;
+	//top:10px;
+	
+	margin:10px;
+	
+	box-shadow: 0 0 10px #CCC;
+	z-index:5;
+	
+	-moz-transform:translateZ(10px);
+	-o-transform:translateZ(10px);
+	-ms-transform:translateZ(10px);
+	-webkit-transform:translateZ(10px);
+	transform:translateZ(10px);
+	
+	float:left;
+	
+	transition:ease-out 1s;
+	
+}
+
+.innerCube
+{
+    vertical-align: middle;
+    text-align: center;
+}
+
+span {
+  text-align: center;
+  font-size: 3em;
+  margin: 20px 0 20px 0;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#green a {
+  color: #B6FF00;
+  font-family: PressStart;
+  font-size: 0.8em;
+}
+
+.cube:hover #green a {
+  -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon4 1.5s ease-in-out infinite alternate;
+  animation: neon4 1.5s ease-in-out infinite alternate;
+}
+
+.cube:hover .innercube img
+{
+	//box-shadow:0 0 5px #FFFFFF;
+}
+
+#orange a {
+  color: #FF9900;
+  font-family: Audiowide;
+}
+
+.cube:hover #orange a {
+  -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon5 1.5s ease-in-out infinite alternate;
+  animation: neon5 1.5s ease-in-out infinite alternate;
+}
+
+#red a {
+  color: #FF1177;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+.cube:hover #red a {
+  color: #fff;
+  font-family: Monoton;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+#blue a {
+  font-size: 1em;
+  color: #228DFF;
+  font-family: Iceland;
+}
+
+.cube:hover #blue a {
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+#yellow a {
+  color: #FFDD1B;
+  font-family: Pacifico;
+}
+
+.cube:hover #yellow a {
+  -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+  animation: neon3 1.5s ease-in-out infinite alternate;
+}
+
+#violet a {
+  color: #BA01FF;
+  font-family: Vampiro One;
+}
+
+.cube:hover #violet a {
+  -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+  animation: neon6 1.5s ease-in-out infinite alternate;
+}
+
+.cube:hover a {
+	text-decoration:none;
+  color: #ffffff;
+  background:transparent;
+}
+a:hover
+{
+	text-decoration:none;
+	background:transparent;
+}
+
+#main
+{
+	z-index:28;
+	background:#000;
+	padding:10px;
+	position:absolute;
+	
+	width:160px;
+	height:160px;
+	
+	left:50%;
+	top:11%;
+	
+	display:none;
+	
+	
+}
+
+#content
+{
+	width:740px;
+}
+
+#content>span
+{
+	text-transform:capitalize;
+	color:red;
+	font-size:12px;
+	cursor:pointer;
+}
+
+#innerContent
+{
+	overflow:auto;
+	padding:10px;
+	padding-bottom:20px;
+	width:737px;
+	height:850px;
+	margin-top:50px;
+	background:#FFF;
+}
+
+#innerContent p
+{ 
+	font-family: Vampiro One;
+	font-size:24px;
+	margin-bottom:10px;
+}
+
+#innerContent ul
+{
+	list-style:disc;
+	list-style-type:disc;
+	margin-left:20px;
+}

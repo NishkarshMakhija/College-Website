@@ -1,0 +1,35 @@
+#abc ul
+{
+	list-style:none;
+	list-style-type:none;
+}
+
+#abc li a
+{
+	width:auto;
+	padding:8px 16px;
+	background:#00B0B3;
+	float:left;
+	color:#FFFFFF;
+	display:block;
+	
+	font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+	cursor:pointer;
+
+	text-decoration:none;
+	color:#FFFFF;
+}
+#abc a:hover
+{
+	transition: background-color 0.3s ease 0s, color 0.15s ease 0s, box-shadow 0.3s ease 0s, opacity 0.3s ease 0s;
+	background:#FFFFFF;
+	color:#000000;
+}
+
+#abc .selected
+{
+	background:#FFFFFF;
+	color:#000000 !important;
+}
